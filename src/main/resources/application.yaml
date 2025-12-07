@@ -1,0 +1,13 @@
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/jwtdemo
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
